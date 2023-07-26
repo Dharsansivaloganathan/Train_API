@@ -11,7 +11,7 @@
 //   });
 //   if (matchingRoutes.length == 0) {
 
-//     res.status(200).send("No Flights Found");
+//     res.status(200).send("No trains Found");
 //   }
 //   else {
 //     res.status(200).json(matchingRoutes);

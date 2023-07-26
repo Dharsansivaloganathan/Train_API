@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const flightSchema = new Schema(
+const trainSchema = new Schema(
   {
     CompanyName: {
       type: String,
     },
-    flightType: {
+    trainType: {
       type: String,
     },
-    flightNumber: {
+    trainNumber: {
       type: String,
     },
     startCity: {
@@ -32,10 +32,10 @@ const flightSchema = new Schema(
     },
   },
   {
-    collection: "FlightTimings",
+    collection: "trainTimings",
   }
 );
 
-const flightsData = mongoose.model("flightsData", flightSchema);
+const trainsData = mongoose.model("trainsData", trainSchema);
 
-module.exports = { flightsData };
+module.exports = { trainsData };
